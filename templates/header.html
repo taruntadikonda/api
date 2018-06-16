@@ -7,7 +7,7 @@
     <base href="{global.baseUrl}" />
 
     <!-- Meta Tags -->
-    <title>{head.title} | {global.appName}</title>
+    <title> {global.appName}</title>
     <meta name="description" content="{head.description}">
 
     <!-- Static Assets -->
@@ -22,28 +22,29 @@
       <!-- Header -->
       <div class="header">
         <!-- Logo -->
-        <a class="logo" href="/"></a>
-        <!-- Navigation -->
+        <a class="logo" href="/"><img src="public/logo.png" alt="Logo" /></a>
+
         <ul class="menu">
           <li>
             <a href="/">Home</a>
           </li>
           <li class="loggedOut">
-            <a href="/">Signup</a>
+            <a href="/account/create">Signup</a>
           </li>
           <li class="loggedOut">
-            <a href="/">Login</a>
+            <a href="/session/create">Login</a>
           </li>
           <li class="loggedIn">
-            <a href="/">Dashboard</a>
+            <a href="/checks/all">Dashboard</a>
           </li>
           <li class="loggedIn">
-            <a href="/">Account Settings</a>
+            <a href="/account/edit">Account Settings</a>
           </li>
           <li class="loggedIn">
-            <a href="/">Logout</a>
+            <a href="#">Logout</a>
           </li>
         </ul>
+        <div class="clear"></div>
       </div>
 
       <!-- Page-Specific Content -->
